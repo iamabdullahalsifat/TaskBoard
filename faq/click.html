@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click</title>
+  <style>
+    .btn{
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; gap: 20px;">
+  <p id="dicrement" class="btn">05</p>
+  <p id="increment" class="btn">15</p>
+  <button class="completed__button">
+    Completed
+  </button>
+  <button class="completed__button">
+    Completed
+  </button>
+
+  <div class="box-1">
+    <p id="box-1"></p>
+  </div>
+  <div class="box-2">
+    <p id="box-2"></p>
+  </div>
+  
+
+  <script>
+    let minasNumber = document.getElementById("dicrement");
+    let plusNumber = document.getElementById("increment");
+    let completedButton = document.querySelectorAll(".completed__button");
+    let box1 = document.getElementById("box-1");
+    let box2 = document.getElementById("box-2");
+    for (let btn of completedButton) {
+      btn.addEventListener("click", () => {
+        alert('dd');
+        if (minasNumber.innerText > 0){
+          minasNumber.innerText = (parseInt(minasNumber.innerText) - 1).toString().padStart(2, '0');
+        } else {
+          minasNumber.innerText = "--"
+        }
+        plusNumber.innerText = parseFloat(plusNumber.innerText) + 1;
+        btn.disabled = true;
+        box1.innerText = "Lorem ipsum dolor sit."
+        box2.innerText = "Lorem ipsum dolor sit. Adddd"
+      })
+    }
+  </script>
+</body>
+</html>
