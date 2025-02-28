@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f4f7ff;
+  padding: 20px;
+}
+/* Custom Setting */
+.max_screen{
+  max-width: 1180px;
+  margin: auto;
+}
+
+
+/* Header */
+.header{
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: 16px;
+}
+/* Nav Section */
+.nav_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav_content > img{
+  width: 20%;
+}
+.nav_logoText{
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--logo-text);
+}
+/* Header Buton */
+.header_button button{
+  background-color: var(--button_color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
