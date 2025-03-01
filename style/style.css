@@ -9,6 +9,7 @@
 body{
   background-color: var(--body-bg);
   padding: 0px 20px;
+  color: var(--logo-text);
 }
 /* Custom Setting */
 .max_screen{
@@ -37,7 +38,7 @@ p{
 /* <=== Header Section ===> */
 .header{
   background-color: var(--white-color);
-  margin: 30px auto;
+  margin: 30px auto 20px;
   border-radius: 20px;
 }
 .nav_section{
@@ -51,7 +52,6 @@ p{
   align-items: center;
   gap: 8px;
   font-size: 30px;
-  color: var(--logo-text);
 }
 .nav_content img{
   width: 20%;
@@ -86,4 +86,127 @@ p{
 }
 .rgb_btn img{
   width: 30px;
+}
+/* <===== (Main Content) =====> */
+.main{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main_left{
+  background-color: var(--white-color);
+  flex-basis: 75%;
+  border-radius: 20px;
+  padding: 20px;
+}
+.left_first{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.Task_Assigned{
+  background-color: var(--body-bg);
+  flex-basis: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Task_Assigned_checkbox{
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Task_Assigned_checkbox img{
+  max-width: 25px;
+}
+.Task_Assigned_Content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Task_Assigned_Content p{
+  margin: 0;
+}
+.Task_Assigned_Content p:first-child{
+  font-size: 14px;
+  font-weight: 500;
+}
+.Task_Assigned_Content p:last-child{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: -8px;
+}
+.discover_something_new_today{
+  background-color: var(--body-bg);
+  cursor: pointer;
+  flex-basis: 50%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: rgb(55,82,253);
+  background: linear-gradient(90deg, rgba(55,82,253,1) 0%, rgba(108,127,250,1) 35%, rgba(155,168,248,1) 100%);
+}
+.discover_something_new_today img{
+  width: 80%;
+}
+.discover_something_new_today p{
+  font-size: 18px;
+  color: var(--white-color);
+}
+.real_time{
+  background-color: var(--body-bg);
+  flex-basis: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.real_time_calender_logo{
+  background-color: var(--white-color);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.main_right{
+  background-color: var(--white-color);
+  flex-basis: 25%;
+  border-radius: 20px;
+}
+.right_first{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px dashed rgba(55, 82, 253, 0.2);
+  padding: 15px;
+}
+.activity_log{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.activity_log_btn{
+  background-color: var(--button_color);
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.activity_log_btn:hover{
+  opacity: 80%;
 }
