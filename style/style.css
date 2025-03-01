@@ -8,7 +8,7 @@
 }
 body{
   background-color: var(--body-bg);
-  padding: 20px;
+  padding: 0px 20px;
 }
 /* Custom Setting */
 .max_screen{
@@ -32,14 +32,58 @@ p{
   --logo-text: #00303C;
   --button_color: #3752FD;
   --highlight_code: #e6e4e4;
+  --box-bg: #F4F7FF;
 }
 /* <=== Header Section ===> */
 .header{
   background-color: var(--white-color);
-  margin: 20px auto;
+  margin: 30px auto;
+  border-radius: 20px;
 }
 .nav_section{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 18px;
+}
+.nav_content{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 30px;
+  color: var(--logo-text);
+}
+.nav_content img{
+  width: 20%;
+}
+.nav_right{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav_task_number{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--box-bg);
+  padding: 2px 12px;
+  border-radius: 20px;
+}
+.task_checkBox{
+  color: var(--button_color);
+  font-size: 28px;
+}
+.rgb_btn{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: var(--box-bg);
+  border-radius: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+.rgb_btn img{
+  width: 30px;
 }
