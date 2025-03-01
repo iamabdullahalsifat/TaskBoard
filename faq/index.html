@@ -27,7 +27,143 @@
     </nav>
   </header>
   <!-- <====== (Main Section) ========> -->
-  
+  <main class="main max_screen">
+    <h2 style="text-align: center;">FAQ</h2>
+    <!-- Faq 1 -->
+    <div class="faq-content">
+      <h3>Question-1: What are the different ways to select an element in the DOM?</h3>
+      <!-- Content -->
+      <div class="faq_answer">
+        <p>DOM-এ একটি উপাদান (Element) নির্বাচন করার জন্য অনেক ধরনের পদ্ধতি বা উপায় রয়েছে →</p>
+        <div>
+          <p>১. <span class="highlight_code">getElementById() →</span> এটি মাধ্যমে একটি নির্দিষ্ট <span class="highlight_code">id</span> অনুযায়ী একটি উপাদান নির্বাচন করা হয়।</p>
+        <ul>
+          <li>let element = document.getElementById("myId");</li>
+        </ul>
+        </div>
+        <div>
+          <p>২. <span class="highlight_code">getElementsByClassName() →</span> এটি মাধমে নির্দিষ্ট <span class="highlight_code">class</span> অনুযায়ী একাধিক উপাদান নির্বাচন করা হয়।</p>
+        <ul>
+          <li>let elements = document.getElementsByClassName("myClass");</li>
+        </ul>
+        </div>
+        <div>
+          <p>৩. <span class="highlight_code">getElementsByTagName() →</span> এটি মাধমে নির্দিষ্ট <span class="highlight_code">tag</span> অনুযায়ী উপাদান নির্বাচন করা হয়।</p>
+        <ul>
+          <li>let elements = document.getElementsByTagName("p");</li>
+        </ul>
+        </div>
+        <div>
+          <p>৪. <span class="highlight_code">querySelector() →</span> এটির মাধ্যমে প্রথম <span class="highlight_code">CSS</span> সিলেক্টর নির্বাচন করে।</p>
+        <ul>
+          <li>let element = document.querySelector(".myClass");</li>
+        </ul>
+        </div>
+        <div>
+          <p>৫. <span class="highlight_code">querySelectorAll() →</span> এটির মাধ্যমে সমস্ত <span class="highlight_code">CSS</span> সিলেক্টর উপাদানগুলোকে নির্বাচন করে <span class="highlight_code">(NodeList রিটার্ন করে)</span>।</p>
+        <ul>
+          <li>let elements = document.querySelectorAll("div.myClass");</li>
+        </ul>
+        </div>
+        <div>
+          <p>৬. <span class="highlight_code">document.forms →</span> এটির মাধ্যমে সকল <span class="highlight_code">form</span> উপাদান নির্বাচন করা হয়।</p>
+        <ul>
+          <li>let forms = document.forms;</li>
+        </ul>
+        </div>
+        <div>
+          <p>৭. document.images → এটির মাধ্যমে সকল <span class="highlight_code">img</span> উপাদান নির্বাচন করা হয়।</p>
+        <ul>
+          <li>let images = document.images;</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Faq 2 -->
+    <div class="faq-content">
+      <h3>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+      <div class="faq_answer">
+        <table border="1">
+          <tr>
+            <th>প্রপার্টি</th>
+            <th>HTML ট্যাগ রেন্ডার করে?</th>
+            <th>গোপন টেক্সট দেখাতে</th>
+            <th>শুধুমাত্র টেক্সট দেখাতে</th>
+            <th>ব্যবহার উপযোগী</th>
+          </tr>
+          <tr>
+            <td>innerHTML</td>
+            <td>হ্যাঁ</td>
+            <td>হ্যাঁ</td>
+            <td>না</td>
+            <td>HTML কোড যোগ বা পরিবর্তন করতে</td>
+          </tr>
+          <tr>
+            <td>innerText</td>
+            <td>না</td>
+            <td>না</td>
+            <td>হ্যাঁ</td>
+            <td>শুধুমাত্র দৃশ্যমান টেক্সট পেতে</td>
+          </tr>
+          <tr>
+            <td>textContent</td>
+            <td>না</td>
+            <td>হ্যাঁ</td>
+            <td>না</td>
+            <td>সম্পূর্ণ টেক্সট (লুকানো সহ) পেতে</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- Faq 3 -->
+    <div class="faq-content">
+      <h3>Question-3: What is event delegation in the DOM?</h3>
+      <div class="faq_answer">
+        <p>যদি অনেকগুলো child element এর জন্য আলাদাভাবে ইভেন্ট লিসেনার যোগ না করে parent element এর মাধ্যমে ইভেন্ট হ্যান্ডেল করা হয়, সেটাই Event Delegation</p>
+      </div>
+    </div>
+    <!-- Faq 4 -->
+    <div class="faq-content">
+      <h3>Question-4: What is event bubbling in the DOM?</h3>
+      <div class="faq_answer">
+        <p>Event Bubbling হলো একটি প্রক্রিয়া যেখানে কোনো child element-এ ইভেন্ট ঘটলে, সেটি parent element-এর দিকে উঠতে থাকে (bubble করে) যতক্ষণ না document পর্যন্ত পৌঁছে।</p>
+      </div>
+    </div>
+    <!-- Faq 4 -->
+    <div class="faq-content">
+      <h3>Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+      <div class="faq_answer">
+        <div>
+          <p>১. <span class="highlight_code">createElement()</span> দিয়ে নতুন উপাদান তৈরি করা</p>
+          <ul>
+            <li>
+              let newElement = document.createElement("div");<br>
+              newElement.innerHTML = "Hello, World!";
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>২. <span class="highlight_code">appendChild()</span> দিয়ে উপাদান যোগ করা</p>
+          <ul>
+            <li>
+              let parent = document.getElementById("parentDiv");<br>
+              parent.appendChild(newElement);
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>৩. <span class="highlight_code">removeChild()</span> দিয়ে উপাদান মুছে ফেলা</p>
+          <ul>
+            <li>
+              let elementRemove = document.getElementById("elementRemove");<br>
+              elementRemove.parentNode.removeChild(elementRemove);
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
   <!-- JavaScript Link -->
   <script src="./faq.js"></script>
   <!-- End -->
