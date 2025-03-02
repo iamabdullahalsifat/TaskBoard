@@ -34,12 +34,14 @@ p{
   --button_color: #3752FD;
   --highlight_code: #e6e4e4;
   --box-bg: #F4F7FF;
+  --text_color: rgb(112, 111, 111);
 }
 /* <=== Header Section ===> */
 .header{
   background-color: var(--white-color);
   margin: 30px auto 20px;
   border-radius: 20px;
+  width: 100%;
 }
 .nav_section{
   display: flex;
@@ -97,12 +99,13 @@ p{
   background-color: var(--white-color);
   flex-basis: 75%;
   border-radius: 20px;
-  padding: 20px;
 }
 .left_first{
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  border-bottom: 1px dashed rgba(55, 82, 253, 0.2);
 }
 .Task_Assigned{
   background-color: var(--body-bg);
@@ -177,6 +180,55 @@ p{
   align-items: center;
   border-radius: 100%;
 }
+.box{
+  background-color: var(--body-bg);
+  border-radius: 20px;
+  padding: 20px;
+}
+.box_first{
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(55, 82, 253, 0.2);
+}
+.box_first p{
+  padding: 5px 15px;
+  border-radius: 12px;
+  background-color: var(--white-color);
+  color: var(--text_color);
+  font-size: 14px;
+}
+.box_first_p{
+  width: fit-content;
+}
+.box_first h2{
+  font-size: 18px;
+  font-weight: 500;
+}
+.box_last{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+.box_last_date p{
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+.box_last button{
+  background-color: var(--button_color);
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.left_last{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
 .main_right{
   background-color: var(--white-color);
   flex-basis: 25%;
@@ -209,4 +261,7 @@ p{
 }
 .activity_log_btn:hover{
   opacity: 80%;
+}
+#history_list{
+  padding: 10px 20px;
 }

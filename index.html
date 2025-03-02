@@ -26,7 +26,7 @@
           <div class="task_checkBox">
             <i class="fa-solid fa-square-check"></i>
           </div>
-          <div>23</div>
+          <div id="increase_number">23</div>
         </div>
         <!-- Rendom BG Color -->
         <div class="rgb_btn" id="rendom_color_btn">
@@ -48,7 +48,7 @@
           </div>
           <div class="Task_Assigned_Content">
             <p>Task Assigned</p>
-            <p>05</p>
+            <p id="decrement_number">06</p>
           </div>
         </div>
         <div class="discover_something_new_today">
@@ -66,6 +66,99 @@
           </div>
         </div>
       </div>
+      <!-- Last -->
+      <div class="left_last">
+        <!-- Box 1 -->
+        <div class="box">
+          <div class="box_first">
+            <p class="box_first_p">ShopEase</p>
+            <h2>Fix Mobile Button Issue</h2>
+            <p>Debug using Chrome DevTools, check for...</p>
+          </div>
+          <div class="box_last">
+            <div class="box_last_date">
+              <small>Deadline</small>
+              <p>21 March 2025</p>
+            </div>
+            <button class="completed_button">Completed</button>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="box">
+          <div class="box_first">
+            <p class="box_first_p">CloudSync</p>
+            <h2>Add Dark Mode</h2>
+            <p>Store the user's preference in localStorage, update...</p>
+          </div>
+          <div class="box_last">
+            <div class="box_last_date">
+              <small>Deadline</small>
+              <p>21 March 2025</p>
+            </div>
+            <button class="completed_button">Completed</button>
+          </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="box">
+          <div class="box_first">
+            <p class="box_first_p">SwiftPay</p>
+            <h2>Optimize  Home page </h2>
+            <p>Debug using Chrome DevTools, check for...</p>
+          </div>
+          <div class="box_last">
+            <div class="box_last_date">
+              <small>Deadline</small>
+              <p>21 March 2025</p>
+            </div>
+            <button class="completed_button">Completed</button>
+          </div>
+        </div>
+        <!-- Box 4 -->
+        <div class="box">
+          <div class="box_first">
+            <p class="box_first_p">Meta</p>
+            <h2>Add new emoji 🤲</h2>
+            <p>Store the user's preference in localStorage, update...</p>
+          </div>
+          <div class="box_last">
+            <div class="box_last_date">
+              <small>Deadline</small>
+              <p>21 March 2025</p>
+            </div>
+            <button class="completed_button">Completed</button>
+          </div>
+        </div>
+        <!-- Box 5 -->
+        <div class="box">
+          <div class="box_first">
+            <p class="box_first_p">Google LLC</p>
+            <h2>Integrate OpenAI API </h2>
+            <p>Debug using Chrome DevTools, check for...</p>
+          </div>
+          <div class="box_last">
+            <div class="box_last_date">
+              <small>Deadline</small>
+              <p>21 March 2025</p>
+            </div>
+            <button class="completed_button">Completed</button>
+          </div>
+        </div>
+        <!-- Box 6 -->
+        <div class="box">
+          <div class="box_first">
+            <p class="box_first_p">Glassdoar</p>
+            <h2>Improve Job searching </h2>
+            <p>Store the user's preference in localStorage, update...</p>
+          </div>
+          <div class="box_last">
+            <div class="box_last_date">
+              <small>Deadline</small>
+              <p>21 March 2025</p>
+            </div>
+            <button class="completed_button">Completed</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Right Container -->
      <div class="main_right">
@@ -75,8 +168,12 @@
           <img src="./assets/activity.png" alt="activity">
           <span>Activity Log</span>
         </div>
-        <button class="activity_log_btn">Clear History</button>
+        <button class="activity_log_btn" id="activity_log_button">Clear History</button>
        </div>
+      <!-- Last -->
+      <div id="history_list">
+        
+      </div>
      </div>
   </main>
   <!-- <=== (JavaScript) ===> -->
