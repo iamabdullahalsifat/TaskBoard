@@ -64,7 +64,7 @@ for (let button of completedBtn) {
     hours = hours % 12 || 12;
     const p = document.createElement("p");
     p.innerHTML = `<p style="background-color: #f4f7ff; padding: 5px 10px; border-radius: 12px; font-size: 14px"
-      ">You have Complete The Task. ${title} at ${hours}:${miniutes}:${seconds} ${ampm}</p>`;
+      ">You have Complete The Task ${title} at ${hours}:${miniutes}:${seconds} ${ampm}</p>`;
     history.appendChild(p);
   });
 }
